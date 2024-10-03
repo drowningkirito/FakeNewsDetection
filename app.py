@@ -12,8 +12,8 @@ import pickle
 nltk.download('stopwords')
 
 # Load vectorizer and model
-vectorizer = pickle.load("vectorizer.pkl")
-model = pickle.load("fake_news_model.pkl")
+vectorizer = joblib.load("vectorizer.pkl")
+model = joblib.load("fake_news_model.pkl")
 
 # Initialize stemmer
 port_stem = PorterStemmer()
