@@ -1,5 +1,5 @@
 import streamlit as st
-# import joblib
+import joblib
 import re
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -7,7 +7,7 @@ from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from PIL import Image
 import nltk
-import pickle
+
 # Download stopwords if not available
 nltk.download('stopwords')
 
